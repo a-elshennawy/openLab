@@ -62,7 +62,7 @@ function App() {
       // Example: (210 - 800*0.25) / 2 = (210 - 200) / 2 = 5mm from left
 
       // 9. Position from top (30mm margin)
-      const imgY = 30;
+      const imgY = 0;
 
       // 10. Add the image to the PDF
       pdf.addImage(
