@@ -83,7 +83,7 @@ function App() {
   return (
     <>
       <section className="container-fluid row justify-content-center align-items-center m-0 p-3 text-center">
-        <div className="col-12 col-lg-5">
+        <div className="col-5">
           <form className="selectionForm p-0 mb-3">
             <select value={selectedTest?.id || ""} onChange={handleTestChange}>
               <option value="" disabled>
@@ -104,11 +104,20 @@ function App() {
           {selectedTest && (
             <form
               ref={formRef}
-              className="dataForm row justify-content-start align-items-start gap-2 text-start m-0 p-3"
+              className="dataForm row justify-content-start align-items-start gap-2 text-start m-0"
             >
-              <div className="col-12 m-0 p-0 mb-3">
-                <h3 className="m-0 p-0 pb-1">{selectedTest.name}</h3>
-                <h5 className="m-0 p-0">{selectedTest.category}</h5>
+              <div className="col-12 row justify-content-between align-items-center m-0 p-0 mb-3">
+                <div className="header col-5 m-0 p-0 ">
+                  <h3 className="m-0 p-0 pb-1">{selectedTest.name}</h3>
+                  <h6 className="m-0 p-0">{selectedTest.category}</h6>
+                </div>
+
+                <div className="col-5 text-end m-0 p-0 ">
+                  <div className="text-end">
+                    <img src="/logo.png" alt="" />
+                    <h6 className="m-0 p-0">open lab</h6>
+                  </div>
+                </div>
               </div>
 
               <div className="inpContainer col-3 m-0 p-0">

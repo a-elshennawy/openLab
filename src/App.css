@@ -46,6 +46,10 @@ body {
   color: #000;
   padding: 10px;
 
+  img {
+    width: 20%;
+  }
+
   .inpContainer {
     label {
       font-weight: bold;
