@@ -1,0 +1,1537 @@
+[
+  {
+    "id": "cbc",
+    "name": "Complete Blood Count (CBC) - صورة دم كاملة",
+    "category": "Hematology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "hemoglobin",
+        "label": "Hemoglobin (Hb)",
+        "unit": "g/dL",
+        "normalRange": {
+          "male": "13.5-17.5",
+          "female": "12.0-15.5"
+        }
+      },
+      {
+        "name": "rbc",
+        "label": "RBC Count",
+        "unit": "million/µL",
+        "normalRange": {
+          "male": "4.5-5.5",
+          "female": "4.0-5.0"
+        }
+      },
+      {
+        "name": "wbc",
+        "label": "WBC Count",
+        "unit": "cells/µL",
+        "normalRange": {
+          "all": "4,000-11,000"
+        }
+      },
+      {
+        "name": "platelets",
+        "label": "Platelets",
+        "unit": "cells/µL",
+        "normalRange": {
+          "all": "150,000-400,000"
+        }
+      },
+      {
+        "name": "hematocrit",
+        "label": "Hematocrit (HCT)",
+        "unit": "%",
+        "normalRange": {
+          "male": "40-54",
+          "female": "36-46"
+        }
+      },
+      {
+        "name": "mcv",
+        "label": "MCV",
+        "unit": "fL",
+        "normalRange": {
+          "all": "80-100"
+        }
+      },
+      {
+        "name": "mch",
+        "label": "MCH",
+        "unit": "pg",
+        "normalRange": {
+          "all": "27-31"
+        }
+      },
+      {
+        "name": "mchc",
+        "label": "MCHC",
+        "unit": "g/dL",
+        "normalRange": {
+          "all": "32-36"
+        }
+      },
+      {
+        "name": "neutrophils",
+        "label": "Neutrophils",
+        "unit": "%",
+        "normalRange": {
+          "all": "40-70"
+        }
+      },
+      {
+        "name": "lymphocytes",
+        "label": "Lymphocytes",
+        "unit": "%",
+        "normalRange": {
+          "all": "20-40"
+        }
+      },
+      {
+        "name": "monocytes",
+        "label": "Monocytes",
+        "unit": "%",
+        "normalRange": {
+          "all": "2-8"
+        }
+      },
+      {
+        "name": "eosinophils",
+        "label": "Eosinophils",
+        "unit": "%",
+        "normalRange": {
+          "all": "1-4"
+        }
+      },
+      {
+        "name": "basophils",
+        "label": "Basophils",
+        "unit": "%",
+        "normalRange": {
+          "all": "0-1"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lipid_profile",
+    "name": "Lipid Profile - دهون الدم",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "totalCholesterol",
+        "label": "Total Cholesterol",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "<200 (Desirable)"
+        }
+      },
+      {
+        "name": "triglycerides",
+        "label": "Triglycerides",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "<150 (Normal)"
+        }
+      },
+      {
+        "name": "hdl",
+        "label": "HDL Cholesterol",
+        "unit": "mg/dL",
+        "normalRange": {
+          "male": ">40",
+          "female": ">50"
+        }
+      },
+      {
+        "name": "ldl",
+        "label": "LDL Cholesterol",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "<100 (Optimal)"
+        }
+      },
+      {
+        "name": "vldl",
+        "label": "VLDL Cholesterol",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "5-40"
+        }
+      }
+    ]
+  },
+  {
+    "id": "liver_function",
+    "name": "Liver Function Tests - وظائف الكبد",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "alt",
+        "label": "ALT (SGPT)",
+        "unit": "U/L",
+        "normalRange": {
+          "all": "7-56"
+        }
+      },
+      {
+        "name": "ast",
+        "label": "AST (SGOT)",
+        "unit": "U/L",
+        "normalRange": {
+          "all": "10-40"
+        }
+      },
+      {
+        "name": "alp",
+        "label": "Alkaline Phosphatase (ALP)",
+        "unit": "U/L",
+        "normalRange": {
+          "all": "44-147"
+        }
+      },
+      {
+        "name": "totalBilirubin",
+        "label": "Total Bilirubin",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "0.1-1.2"
+        }
+      },
+      {
+        "name": "directBilirubin",
+        "label": "Direct Bilirubin",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "0.0-0.3"
+        }
+      },
+      {
+        "name": "indirectBilirubin",
+        "label": "Indirect Bilirubin",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "0.1-0.9"
+        }
+      },
+      {
+        "name": "totalProtein",
+        "label": "Total Protein",
+        "unit": "g/dL",
+        "normalRange": {
+          "all": "6.0-8.3"
+        }
+      },
+      {
+        "name": "albumin",
+        "label": "Albumin",
+        "unit": "g/dL",
+        "normalRange": {
+          "all": "3.5-5.5"
+        }
+      },
+      {
+        "name": "globulin",
+        "label": "Globulin",
+        "unit": "g/dL",
+        "normalRange": {
+          "all": "2.0-3.5"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kidney_function",
+    "name": "Kidney Function Tests - وظائف الكلى",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "creatinine",
+        "label": "Creatinine",
+        "unit": "mg/dL",
+        "normalRange": {
+          "male": "0.7-1.3",
+          "female": "0.6-1.1"
+        }
+      },
+      {
+        "name": "urea",
+        "label": "Urea",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "15-45"
+        }
+      },
+      {
+        "name": "bun",
+        "label": "Blood Urea Nitrogen (BUN)",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "7-20"
+        }
+      },
+      {
+        "name": "uricAcid",
+        "label": "Uric Acid",
+        "unit": "mg/dL",
+        "normalRange": {
+          "male": "3.5-7.2",
+          "female": "2.6-6.0"
+        }
+      }
+    ]
+  },
+  {
+    "id": "thyroid_profile",
+    "name": "Thyroid Function Tests - وظائف الغدة الدرقية",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "tsh",
+        "label": "TSH",
+        "unit": "µIU/mL",
+        "normalRange": {
+          "all": "0.4-4.0"
+        }
+      },
+      {
+        "name": "t3",
+        "label": "T3",
+        "unit": "ng/dL",
+        "normalRange": {
+          "all": "80-200"
+        }
+      },
+      {
+        "name": "t4",
+        "label": "T4",
+        "unit": "µg/dL",
+        "normalRange": {
+          "all": "5.0-12.0"
+        }
+      },
+      {
+        "name": "freeT3",
+        "label": "Free T3",
+        "unit": "pg/mL",
+        "normalRange": {
+          "all": "2.0-4.4"
+        }
+      },
+      {
+        "name": "freeT4",
+        "label": "Free T4",
+        "unit": "ng/dL",
+        "normalRange": {
+          "all": "0.8-1.8"
+        }
+      }
+    ]
+  },
+  {
+    "id": "blood_glucose",
+    "name": "Blood Glucose Tests - سكر الدم",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "fastingGlucose",
+        "label": "Fasting Blood Glucose",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "70-100"
+        }
+      },
+      {
+        "name": "randomGlucose",
+        "label": "Random Blood Glucose",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "70-140"
+        }
+      },
+      {
+        "name": "postprandial",
+        "label": "2-Hour Postprandial",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "<140"
+        }
+      },
+      {
+        "name": "hba1c",
+        "label": "HbA1c",
+        "unit": "%",
+        "normalRange": {
+          "all": "4.0-5.6"
+        }
+      }
+    ]
+  },
+  {
+    "id": "electrolytes",
+    "name": "Electrolytes - الأملاح والمعادن",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "sodium",
+        "label": "Sodium (Na+)",
+        "unit": "mmol/L",
+        "normalRange": {
+          "all": "136-145"
+        }
+      },
+      {
+        "name": "potassium",
+        "label": "Potassium (K+)",
+        "unit": "mmol/L",
+        "normalRange": {
+          "all": "3.5-5.0"
+        }
+      },
+      {
+        "name": "chloride",
+        "label": "Chloride (Cl-)",
+        "unit": "mmol/L",
+        "normalRange": {
+          "all": "98-107"
+        }
+      },
+      {
+        "name": "calcium",
+        "label": "Calcium (Ca++)",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "8.5-10.5"
+        }
+      },
+      {
+        "name": "magnesium",
+        "label": "Magnesium (Mg++)",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "1.7-2.2"
+        }
+      },
+      {
+        "name": "phosphorus",
+        "label": "Phosphorus",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "2.5-4.5"
+        }
+      }
+    ]
+  },
+  {
+    "id": "urine_analysis",
+    "name": "Urine Analysis - تحليل بول",
+    "category": "Clinical Pathology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "color",
+        "label": "Color",
+        "unit": "",
+        "normalRange": {
+          "all": "Yellow"
+        }
+      },
+      {
+        "name": "appearance",
+        "label": "Appearance",
+        "unit": "",
+        "normalRange": {
+          "all": "Clear"
+        }
+      },
+      {
+        "name": "ph",
+        "label": "pH",
+        "unit": "",
+        "normalRange": {
+          "all": "4.5-8.0"
+        }
+      },
+      {
+        "name": "specificGravity",
+        "label": "Specific Gravity",
+        "unit": "",
+        "normalRange": {
+          "all": "1.005-1.030"
+        }
+      },
+      {
+        "name": "protein",
+        "label": "Protein",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "glucose",
+        "label": "Glucose",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "ketones",
+        "label": "Ketones",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "blood",
+        "label": "Blood",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "bilirubin",
+        "label": "Bilirubin",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "urobilinogen",
+        "label": "Urobilinogen",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "0.1-1.0"
+        }
+      },
+      {
+        "name": "nitrite",
+        "label": "Nitrite",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "leukocytes",
+        "label": "Leukocytes",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "rbc",
+        "label": "RBCs (Microscopic)",
+        "unit": "/HPF",
+        "normalRange": {
+          "all": "0-3"
+        }
+      },
+      {
+        "name": "wbc",
+        "label": "WBCs (Microscopic)",
+        "unit": "/HPF",
+        "normalRange": {
+          "all": "0-5"
+        }
+      },
+      {
+        "name": "epithelialCells",
+        "label": "Epithelial Cells",
+        "unit": "/HPF",
+        "normalRange": {
+          "all": "Few"
+        }
+      },
+      {
+        "name": "casts",
+        "label": "Casts",
+        "unit": "/LPF",
+        "normalRange": {
+          "all": "0-2 (Hyaline)"
+        }
+      },
+      {
+        "name": "crystals",
+        "label": "Crystals",
+        "unit": "",
+        "normalRange": {
+          "all": "Few or None"
+        }
+      },
+      {
+        "name": "bacteria",
+        "label": "Bacteria",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      }
+    ]
+  },
+  {
+    "id": "stool_analysis",
+    "name": "Stool Analysis - تحليل براز",
+    "category": "Clinical Pathology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "color",
+        "label": "Color",
+        "unit": "",
+        "normalRange": {
+          "all": "Brown"
+        }
+      },
+      {
+        "name": "consistency",
+        "label": "Consistency",
+        "unit": "",
+        "normalRange": {
+          "all": "Formed"
+        }
+      },
+      {
+        "name": "occultBlood",
+        "label": "Occult Blood",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "ph",
+        "label": "pH",
+        "unit": "",
+        "normalRange": {
+          "all": "6.0-8.0"
+        }
+      },
+      {
+        "name": "mucus",
+        "label": "Mucus",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "pus",
+        "label": "Pus Cells",
+        "unit": "/HPF",
+        "normalRange": {
+          "all": "0-3"
+        }
+      },
+      {
+        "name": "rbc",
+        "label": "RBCs",
+        "unit": "/HPF",
+        "normalRange": {
+          "all": "0-3"
+        }
+      },
+      {
+        "name": "parasites",
+        "label": "Parasites",
+        "unit": "",
+        "normalRange": {
+          "all": "Not Seen"
+        }
+      },
+      {
+        "name": "ova",
+        "label": "Ova",
+        "unit": "",
+        "normalRange": {
+          "all": "Not Seen"
+        }
+      }
+    ]
+  },
+  {
+    "id": "coagulation_profile",
+    "name": "Coagulation Profile - سيولة الدم",
+    "category": "Hematology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "pt",
+        "label": "Prothrombin Time (PT)",
+        "unit": "seconds",
+        "normalRange": {
+          "all": "11-13.5"
+        }
+      },
+      {
+        "name": "inr",
+        "label": "INR",
+        "unit": "",
+        "normalRange": {
+          "all": "0.8-1.2"
+        }
+      },
+      {
+        "name": "ptt",
+        "label": "Partial Thromboplastin Time (PTT)",
+        "unit": "seconds",
+        "normalRange": {
+          "all": "25-35"
+        }
+      },
+      {
+        "name": "aptt",
+        "label": "Activated PTT (aPTT)",
+        "unit": "seconds",
+        "normalRange": {
+          "all": "30-40"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hepatitis_markers",
+    "name": "Hepatitis Markers - فيروسات الكبد",
+    "category": "Serology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "hbsAg",
+        "label": "HBsAg",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "hbsAb",
+        "label": "Anti-HBs",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative/Positive (if vaccinated)"
+        }
+      },
+      {
+        "name": "hbcAb",
+        "label": "Anti-HBc",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "hcvAb",
+        "label": "Anti-HCV",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "hav",
+        "label": "Anti-HAV",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tumor_markers",
+    "name": "Tumor Markers - دلالات الأورام",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "cea",
+        "label": "CEA",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "<3.0 (Non-smokers), <5.0 (Smokers)"
+        }
+      },
+      {
+        "name": "afp",
+        "label": "AFP",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "<10"
+        }
+      },
+      {
+        "name": "ca125",
+        "label": "CA 125",
+        "unit": "U/mL",
+        "normalRange": {
+          "all": "<35"
+        }
+      },
+      {
+        "name": "ca199",
+        "label": "CA 19-9",
+        "unit": "U/mL",
+        "normalRange": {
+          "all": "<37"
+        }
+      },
+      {
+        "name": "psa",
+        "label": "PSA (Total)",
+        "unit": "ng/mL",
+        "normalRange": {
+          "male": "<4.0"
+        }
+      },
+      {
+        "name": "freePsa",
+        "label": "Free PSA",
+        "unit": "ng/mL",
+        "normalRange": {
+          "male": ">25% of Total PSA"
+        }
+      },
+      {
+        "name": "ca153",
+        "label": "CA 15-3",
+        "unit": "U/mL",
+        "normalRange": {
+          "female": "<30"
+        }
+      }
+    ]
+  },
+  {
+    "id": "crp_esr",
+    "name": "Inflammation Markers - علامات الالتهاب",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "crp",
+        "label": "C-Reactive Protein (CRP)",
+        "unit": "mg/L",
+        "normalRange": {
+          "all": "<10"
+        }
+      },
+      {
+        "name": "esr",
+        "label": "ESR",
+        "unit": "mm/hr",
+        "normalRange": {
+          "male": "0-15",
+          "female": "0-20"
+        }
+      }
+    ]
+  },
+  {
+    "id": "iron_profile",
+    "name": "Iron Profile - مخزون الحديد",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "serumIron",
+        "label": "Serum Iron",
+        "unit": "µg/dL",
+        "normalRange": {
+          "male": "65-175",
+          "female": "50-170"
+        }
+      },
+      {
+        "name": "tibc",
+        "label": "TIBC",
+        "unit": "µg/dL",
+        "normalRange": {
+          "all": "250-450"
+        }
+      },
+      {
+        "name": "transferrin",
+        "label": "Transferrin",
+        "unit": "mg/dL",
+        "normalRange": {
+          "all": "200-360"
+        }
+      },
+      {
+        "name": "ferritin",
+        "label": "Ferritin",
+        "unit": "ng/mL",
+        "normalRange": {
+          "male": "12-300",
+          "female": "12-150"
+        }
+      },
+      {
+        "name": "saturation",
+        "label": "Transferrin Saturation",
+        "unit": "%",
+        "normalRange": {
+          "all": "20-50"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vitamin_d",
+    "name": "Vitamin D - فيتامين د",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "vitaminD",
+        "label": "25-OH Vitamin D",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "30-100"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vitamin_b12_folate",
+    "name": "Vitamin B12 & Folate - فيتامين ب12 وحمض الفوليك",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "vitaminB12",
+        "label": "Vitamin B12",
+        "unit": "pg/mL",
+        "normalRange": {
+          "all": "200-900"
+        }
+      },
+      {
+        "name": "folicAcid",
+        "label": "Folic Acid",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "2.7-17.0"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pregnancy_test",
+    "name": "Pregnancy Test - اختبار الحمل",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "hcg",
+        "label": "β-HCG",
+        "unit": "mIU/mL",
+        "normalRange": {
+          "female": "<5 (Non-pregnant)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "testosterone",
+    "name": "Testosterone - هرمون التستوستيرون",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "totalTestosterone",
+        "label": "Total Testosterone",
+        "unit": "ng/dL",
+        "normalRange": {
+          "male": "300-1000",
+          "female": "15-70"
+        }
+      },
+      {
+        "name": "freeTestosterone",
+        "label": "Free Testosterone",
+        "unit": "pg/mL",
+        "normalRange": {
+          "male": "5-21",
+          "female": "0.3-1.9"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cortisol",
+    "name": "Cortisol - الكورتيزول",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "morningCortisol",
+        "label": "Morning Cortisol",
+        "unit": "µg/dL",
+        "normalRange": {
+          "all": "6-23"
+        }
+      },
+      {
+        "name": "eveningCortisol",
+        "label": "Evening Cortisol",
+        "unit": "µg/dL",
+        "normalRange": {
+          "all": "3-16"
+        }
+      }
+    ]
+  },
+  {
+    "id": "semen_analysis",
+    "name": "Semen Analysis - تحليل السائل المنوي",
+    "category": "Clinical Pathology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "volume",
+        "label": "Volume",
+        "unit": "mL",
+        "normalRange": {
+          "male": "1.5-6.0"
+        }
+      },
+      {
+        "name": "ph",
+        "label": "pH",
+        "unit": "",
+        "normalRange": {
+          "male": "7.2-8.0"
+        }
+      },
+      {
+        "name": "concentration",
+        "label": "Sperm Concentration",
+        "unit": "million/mL",
+        "normalRange": {
+          "male": "≥15"
+        }
+      },
+      {
+        "name": "totalCount",
+        "label": "Total Sperm Count",
+        "unit": "million",
+        "normalRange": {
+          "male": "≥39"
+        }
+      },
+      {
+        "name": "motility",
+        "label": "Total Motility",
+        "unit": "%",
+        "normalRange": {
+          "male": "≥40"
+        }
+      },
+      {
+        "name": "progressiveMotility",
+        "label": "Progressive Motility",
+        "unit": "%",
+        "normalRange": {
+          "male": "≥32"
+        }
+      },
+      {
+        "name": "normalMorphology",
+        "label": "Normal Morphology",
+        "unit": "%",
+        "normalRange": {
+          "male": "≥4"
+        }
+      },
+      {
+        "name": "vitality",
+        "label": "Vitality",
+        "unit": "%",
+        "normalRange": {
+          "male": "≥58"
+        }
+      },
+      {
+        "name": "liquefaction",
+        "label": "Liquefaction Time",
+        "unit": "minutes",
+        "normalRange": {
+          "male": "≤60"
+        }
+      },
+      {
+        "name": "wbc",
+        "label": "WBC",
+        "unit": "/HPF",
+        "normalRange": {
+          "male": "<1 million/mL"
+        }
+      }
+    ]
+  },
+  {
+    "id": "rheumatoid_factor",
+    "name": "Rheumatoid Factor & Anti-CCP - عامل الروماتويد",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "rf",
+        "label": "Rheumatoid Factor (RF)",
+        "unit": "IU/mL",
+        "normalRange": {
+          "all": "<14"
+        }
+      },
+      {
+        "name": "antiCcp",
+        "label": "Anti-CCP",
+        "unit": "U/mL",
+        "normalRange": {
+          "all": "<20"
+        }
+      }
+    ]
+  },
+  {
+    "id": "aso_titre",
+    "name": "ASO Titre - مضادات الاستربتوليسين",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "aso",
+        "label": "ASO Titre",
+        "unit": "IU/mL",
+        "normalRange": {
+          "all": "<200"
+        }
+      }
+    ]
+  },
+  {
+    "id": "widal_test",
+    "name": "Widal Test - اختبار فيدال",
+    "category": "Serology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "typhiO",
+        "label": "S. Typhi O",
+        "unit": "",
+        "normalRange": {
+          "all": "<1:80"
+        }
+      },
+      {
+        "name": "typhiH",
+        "label": "S. Typhi H",
+        "unit": "",
+        "normalRange": {
+          "all": "<1:80"
+        }
+      },
+      {
+        "name": "paratyphiAH",
+        "label": "S. Paratyphi A-H",
+        "unit": "",
+        "normalRange": {
+          "all": "<1:80"
+        }
+      },
+      {
+        "name": "paratyphiBH",
+        "label": "S. Paratyphi B-H",
+        "unit": "",
+        "normalRange": {
+          "all": "<1:80"
+        }
+      }
+    ]
+  },
+  {
+    "id": "blood_group",
+    "name": "Blood Group & Rh - فصيلة الدم",
+    "category": "Serology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "bloodGroup",
+        "label": "Blood Group",
+        "unit": "",
+        "normalRange": {
+          "all": "A, B, AB, or O"
+        }
+      },
+      {
+        "name": "rhFactor",
+        "label": "Rh Factor",
+        "unit": "",
+        "normalRange": {
+          "all": "Positive or Negative"
+        }
+      }
+    ]
+  },
+  {
+    "id": "g6pd",
+    "name": "G6PD Deficiency - أنيميا الفول",
+    "category": "Hematology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "g6pd",
+        "label": "G6PD Activity",
+        "unit": "U/g Hb",
+        "normalRange": {
+          "all": "8.8-13.4"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cardiac_markers",
+    "name": "Cardiac Markers - إنزيمات القلب",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "troponinI",
+        "label": "Troponin I",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "<0.04"
+        }
+      },
+      {
+        "name": "troponinT",
+        "label": "Troponin T",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "<0.01"
+        }
+      },
+      {
+        "name": "ckMb",
+        "label": "CK-MB",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "<5.0"
+        }
+      },
+      {
+        "name": "ck",
+        "label": "Creatine Kinase (CK)",
+        "unit": "U/L",
+        "normalRange": {
+          "male": "38-174",
+          "female": "26-140"
+        }
+      },
+      {
+        "name": "ldh",
+        "label": "LDH",
+        "unit": "U/L",
+        "normalRange": {
+          "all": "140-280"
+        }
+      }
+    ]
+  },
+  {
+    "id": "amylase_lipase",
+    "name": "Pancreatic Enzymes - إنزيمات البنكرياس",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "amylase",
+        "label": "Amylase",
+        "unit": "U/L",
+        "normalRange": {
+          "all": "30-110"
+        }
+      },
+      {
+        "name": "lipase",
+        "label": "Lipase",
+        "unit": "U/L",
+        "normalRange": {
+          "all": "0-160"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hiv_test",
+    "name": "HIV Test - فيروس نقص المناعة",
+    "category": "Serology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "hivAb",
+        "label": "HIV Antibodies",
+        "unit": "",
+        "normalRange": {
+          "all": "Non-Reactive"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vdrl_test",
+    "name": "VDRL Test - اختبار الزهري",
+    "category": "Serology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "vdrl",
+        "label": "VDRL",
+        "unit": "",
+        "normalRange": {
+          "all": "Non-Reactive"
+        }
+      }
+    ]
+  },
+  {
+    "id": "prolactin",
+    "name": "Prolactin - هرمون الحليب",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "prolactin",
+        "label": "Prolactin",
+        "unit": "ng/mL",
+        "normalRange": {
+          "male": "4-15",
+          "female": "4-30 (Non-pregnant)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "estradiol",
+    "name": "Estradiol - هرمون الاستروجين",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "estradiol",
+        "label": "Estradiol (E2)",
+        "unit": "pg/mL",
+        "normalRange": {
+          "female": "30-400 (varies by cycle phase)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "progesterone",
+    "name": "Progesterone - هرمون البروجسترون",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "progesterone",
+        "label": "Progesterone",
+        "unit": "ng/mL",
+        "normalRange": {
+          "female": "0.2-1.5 (Follicular), 2-25 (Luteal)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lh_fsh",
+    "name": "LH & FSH - هرمونات الغدة النخامية",
+    "category": "Immunology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "lh",
+        "label": "LH",
+        "unit": "mIU/mL",
+        "normalRange": {
+          "male": "1.7-8.6",
+          "female": "2.4-12.6 (Follicular), 14-96 (Mid-cycle)"
+        }
+      },
+      {
+        "name": "fsh",
+        "label": "FSH",
+        "unit": "mIU/mL",
+        "normalRange": {
+          "male": "1.5-12.4",
+          "female": "3.5-12.5 (Follicular), 4.7-21.5 (Mid-cycle)"
+        }
+      }
+    ]
+  },
+  {
+    "id": "culture_sensitivity",
+    "name": "Culture & Sensitivity - مزرعة وحساسية",
+    "category": "Microbiology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "specimen",
+        "label": "Specimen Type",
+        "unit": "",
+        "normalRange": {
+          "all": "Urine/Blood/Stool/Wound/Throat"
+        }
+      },
+      {
+        "name": "growth",
+        "label": "Bacterial Growth",
+        "unit": "",
+        "normalRange": {
+          "all": "No Growth (Normal)"
+        }
+      },
+      {
+        "name": "organism",
+        "label": "Organism Identified",
+        "unit": "",
+        "normalRange": {
+          "all": "None"
+        }
+      },
+      {
+        "name": "colonyCount",
+        "label": "Colony Count",
+        "unit": "CFU/mL",
+        "normalRange": {
+          "all": "<10,000 (Urine)"
+        }
+      },
+      {
+        "name": "sensitivity",
+        "label": "Antibiotic Sensitivity",
+        "unit": "",
+        "normalRange": {
+          "all": "List sensitive antibiotics"
+        }
+      }
+    ]
+  },
+  {
+    "id": "d_dimer",
+    "name": "D-Dimer Test",
+    "category": "Hematology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "dDimer",
+        "label": "D-Dimer",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "<500"
+        }
+      }
+    ]
+  },
+  {
+    "id": "procalcitonin",
+    "name": "Procalcitonin - البروكالسيتونين",
+    "category": "Clinical Chemistry",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "procalcitonin",
+        "label": "Procalcitonin",
+        "unit": "ng/mL",
+        "normalRange": {
+          "all": "<0.05"
+        }
+      }
+    ]
+  },
+  {
+    "id": "toxoplasma",
+    "name": "Toxoplasma Antibodies - التوكسوبلازما",
+    "category": "Serology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "toxoIgG",
+        "label": "Toxoplasma IgG",
+        "unit": "IU/mL",
+        "normalRange": {
+          "all": "<1.6 (Negative)"
+        }
+      },
+      {
+        "name": "toxoIgM",
+        "label": "Toxoplasma IgM",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cmv",
+    "name": "CMV Antibodies - الفيروس المضخم للخلايا",
+    "category": "Serology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "cmvIgG",
+        "label": "CMV IgG",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      },
+      {
+        "name": "cmvIgM",
+        "label": "CMV IgM",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      }
+    ]
+  },
+  {
+    "id": "rubella",
+    "name": "Rubella Antibodies - الحصبة الألمانية",
+    "category": "Serology",
+    "commonFields": ["patientName", "age", "gender"],
+    "testFields": [
+      {
+        "name": "rubellaIgG",
+        "label": "Rubella IgG",
+        "unit": "IU/mL",
+        "normalRange": {
+          "all": "<10 (Negative), >10 (Immune)"
+        }
+      },
+      {
+        "name": "rubellaIgM",
+        "label": "Rubella IgM",
+        "unit": "",
+        "normalRange": {
+          "all": "Negative"
+        }
+      }
+    ]
+  }
+]
