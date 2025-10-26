@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
   text-transform: capitalize !important;
-  font-family: ubuntu, zain;
+  font-family: ubuntu, zain !important;
 }
 
 body {
@@ -75,5 +75,17 @@ body {
         color: #000;
       }
     }
+  }
+}
+
+.inner {
+  border-radius: 10px;
+  position: fixed;
+  top: 40%;
+  transform: translateY(-40%);
+
+  svg {
+    font-size: 50px;
+    color: #fd0000;
   }
 }

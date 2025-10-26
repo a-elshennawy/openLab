@@ -1,6 +1,7 @@
-import { useState, use, useRef } from "react";
+import { useState, use, useRef, useEffect } from "react";
 import jsPDF from "jspdf";
 import html2canvas from "html2canvas";
+import ScreenError from "./Components/ScreenError";
 
 async function fetchTests() {
   const res = await fetch("/labTests.json");
@@ -14,9 +15,35 @@ function App() {
   const [selectedTest, setSelectedTest] = useState(null);
   const [name, setName] = useState("");
   const [gender, setGender] = useState("male");
+  const [isLargeScreen, setIsLargeScreen] = useState(true);
+  const [loading, setLoading] = useState(true);
   const formRef = useRef();
-
   const tests = use(testsPromise);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLargeScreen(window.innerWidth >= 1400);
+    };
+
+    checkScreenSize();
+    setLoading(false);
+
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
+  if (loading) {
+    return null;
+  }
+
+  if (!isLargeScreen) {
+    return (
+      <>
+        <ScreenError />
+      </>
+    );
+  }
 
   const handleTestChange = (e) => {
     const testId = e.target.value;
@@ -29,7 +56,7 @@ function App() {
     const input = formRef.current;
 
     // 2. Take a "screenshot" of that HTML element
-    html2canvas(input).then((canvas) => {
+    html2canvas(input, { scale: 2 }).then((canvas) => {
       // html2canvas returns a Promise
       // When done, we get a <canvas> element with our form drawn on it
 
